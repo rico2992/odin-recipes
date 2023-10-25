@@ -1,0 +1,129 @@
+/* Apply a reset to remove default browser styles */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem; /* Increase font size for the header */
+    letter-spacing: 2px; /* Add letter spacing for a decorative effect */
+    text-transform: uppercase; /* Transform text to uppercase */
+    border-bottom: 2px solid #ffd700; /* Add a gold-colored underline */
+    margin-bottom: 30px; /* Provide space below the header */
+    position: relative; /* Create a stacking context for the pseudo-element */
+}
+
+/* Style the pseudo-element for the header */
+h1::before {
+    content: ""; /* Generate content for the pseudo-element */
+    position: absolute;
+    bottom: -5px; /* Position the pseudo-element just below the header */
+    left: 50%; /* Position it in the center */
+    transform: translateX(-50%); /* Center the pseudo-element horizontally */
+    width: 30px;
+    height: 3px;
+    background-color: #fff; /* Style the pseudo-element with a white color */
+}
+
+/* Reset default browser styles */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Set background color for the body */
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffd700;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Style the pseudo-element for the header */
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Style the recipe list */
+#recipeList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#recipeList li {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 300px;
+}
+
+#recipeList li a {
+    font-weight: bold;
+    color: #333;
+}
+
+#recipeList li:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the recipe details */
+#recipeDetails {
+    text-align: center;
+    padding: 20px;
+}
+
+#recipeDetails h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#recipeDetails p {
+    color: #555;
+}
+
